@@ -6,20 +6,21 @@ public class User {
 	private String last_name;
 	private String email;
 	private String avatar;
-	
+	private int counter;
 	
 	public User() {
 		
 	}
 
 
-	public User(String id, String first_name, String last_name, String email, String avatar) {
+	public User(int counter,String id, String first_name, String last_name, String email, String avatar) {
 		super();
 		this.id = id;
 		this.first_name = first_name;
 		this.last_name = last_name;
 		this.email = email;
 		this.avatar = avatar;
+		this.counter = counter;
 	}
 
 
@@ -72,10 +73,21 @@ public class User {
 		this.avatar = avatar;
 	}
 	
+	
+    public int getCounter() {
+		return counter;
+	}
+
+
+	public void setCounter(int counter) {
+		this.counter = counter;
+	}
+
+
 public String toString() {
 		
-		return "User [\nID: "+id+ "\nFirst Name: "+first_name+"\nLast Name: "
-		+last_name+"\nEmail Address: "+email+"\nAvatar: "+avatar+"]\n";
+		return "User ["+counter+"]: {\nID Number: "+id+ "\nFirst Name: "+first_name+"\tLast Name: "
+		+last_name+"\nEmail Address: "+email+"\nAvatar: "+avatar+"}\n";
 	}
 	
 

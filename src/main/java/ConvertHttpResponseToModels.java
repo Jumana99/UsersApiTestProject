@@ -62,8 +62,10 @@ public static  List <User> convertURLResponseToUsersObjects() throws ParseExcept
 	//Using the JSON simple library parse the string into a json object
 	JSONParser parse = new JSONParser();
 	JSONObject data_object = (JSONObject) parse.parse(inputline);
+	
 	JSONArray array = (JSONArray) data_object.get("data");
 	List<User> usersList = new ArrayList<>();
+	int counter = 0;
 	
 	for (int i = 0; i < array.size(); i++) {
 		JSONObject new_object = (JSONObject) array.get(i);
@@ -74,10 +76,11 @@ public static  List <User> convertURLResponseToUsersObjects() throws ParseExcept
 		String avatar = new_object.get("avatar").toString();
   
 		//create object of user
-		User user = new User (id, first_name, last_name, email, avatar);
+		User user = new User (counter, id, first_name, last_name, email, avatar);
 		usersList.add(user);
+		counter++;
        }	   
- return usersList;
+     return usersList;
     }					
 
 }

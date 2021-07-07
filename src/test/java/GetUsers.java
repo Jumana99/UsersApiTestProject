@@ -42,5 +42,8 @@ public class GetUsers {
             System.out.println(inputLine+"\n");
             
         in.close();
+        
+   
+    	//given().get(GET_ALL_USERS_URL).then().statusCode(200).log().all();
 	}
 }
