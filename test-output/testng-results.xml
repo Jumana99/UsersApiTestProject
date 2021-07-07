@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-07-06T16:09:49 IDT" name="Default suite" finished-at="2021-07-06T16:09:52 IDT" duration-ms="2276">
+  <suite started-at="2021-07-07T12:14:17 IDT" name="Default suite" finished-at="2021-07-07T12:14:18 IDT" duration-ms="1077">
     <groups>
     </groups>
-    <test started-at="2021-07-06T16:09:49 IDT" name="Default test" finished-at="2021-07-06T16:09:52 IDT" duration-ms="2276">
+    <test started-at="2021-07-07T12:14:17 IDT" name="Default test" finished-at="2021-07-07T12:14:18 IDT" duration-ms="1077">
       <class name="GetUsers">
-        <test-method signature="getAllUsers()[pri:0, instance:GetUsers@6a6afff2]" started-at="2021-07-06T16:09:50 IDT" name="getAllUsers" finished-at="2021-07-06T16:09:52 IDT" duration-ms="2241" status="PASS">
+        <test-method signature="getAllUsers()[pri:0, instance:GetUsers@503d687a]" started-at="2021-07-07T12:14:17 IDT" name="getAllUsers" finished-at="2021-07-07T12:14:18 IDT" duration-ms="1045" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getAllUsers -->
